@@ -7,6 +7,8 @@ Qual operação deseja fazer?
 [3] Extrato
 [0] Sair
 
+Clientes satisfeitos, são clientes felizes!! =)
+
 => """
 
 saldo = 0
@@ -25,10 +27,10 @@ while True:
         
         if valor > 0:
             saldo += valor
-            extrato += f"Depósito: R$ {valor:.2f}\n"
+            extrato += f"Seu Depósito foi de: R$ {valor:.2f}\n"
               
         else:
-            print("Operação falhou! O valor informado é inválido.")
+            print("Operação Inválida! O valor informado é inválido.")
 #Sacar
     elif opcao == "2":
         valor = float(input("Qual o valor que deseja sacar?: "))
@@ -57,14 +59,14 @@ while True:
             print("Operação falhou! O valor informado é inválido.")
 #Extrato
     elif opcao == "3":
-        print("\n================ EXTRATO ================")
+        print("\n===============* EXTRATO *===============")
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo: R$ {saldo:.2f}")
-        print("==========================================")
+        print("*========================================*")
 
     elif opcao == "0":
         break
         
 
     else:
-        print("Opção Invalida")
+        print("XXXOpção InvalidaXXX")
